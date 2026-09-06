@@ -38,4 +38,4 @@ PlainStormを読み込めるCodexで、相談の最初に「PlainStormを使っ�
 
 エラーの修正、コードレビュー、すでに決まった仕様の実装は、通常の作業依頼として進めます。
 
-導入・更新・取り外しは [README](../README.md) を、スキルの判断ルールは [SKILL.md](../skills/plainstorm/SKILL.md) を参照してください。
+導入・更新・取り外しは [README](../README.md) を、スキルの判断ルールは [日本語の指示全文](../skills/plainstorm/SKILL.ja.md) を参照してください。

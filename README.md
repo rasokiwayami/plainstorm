@@ -1,6 +1,8 @@
 # PlainStorm
 
-PlainStorm は、まだ形の決まっていない案や判断を、目的・制約・成功条件・次に確かめることへ整理するための会話スキルです。未解決の種類に応じて、Light、Deep Grill、Blindspot/Research、Options/Prototype、evidence-driven re-entry のいずれかを選びます。
+PlainStorm は、まだ形の決まっていない案や判断を、目的・制約・成功条件・次に確かめることへ整理するための会話スキルです。必要に応じて、短い整理、深掘り、調査、選択肢や試作の比較、結果からの見直しを使い分けます。
+
+スキルの指示を日本語で読む場合は、[SKILL.ja.md](skills/plainstorm/SKILL.ja.md)からどうぞ。
 
 ## まず使う
 
@@ -93,10 +95,18 @@ PlainStorm は、デバッグ、コードレビュー、すでに確定した仕
 
 ## ファイルと帰属
 
-- [スキル本体](skills/plainstorm/SKILL.md)
-- [スキルのライセンス通知](skills/plainstorm/LICENSE.superpowers)
-- [第三者通知](THIRD_PARTY_NOTICES.md)
-- [使い方ガイド](docs/usage.md)
-- [GitHub リポジトリ](https://github.com/rasokiwayami/plainstorm)
+| 文書 | 日本語 | 英語原文 |
+| --- | --- | --- |
+| スキルの指示 | [SKILL.ja.md](skills/plainstorm/SKILL.ja.md) | [SKILL.md](skills/plainstorm/SKILL.md) |
+| 深掘りの進め方 | [日本語](skills/plainstorm/references/deep-grill.ja.md) | [English](skills/plainstorm/references/deep-grill.md) |
+| 調査・比較・試作の使い分け | [日本語](skills/plainstorm/references/discovery-routes.ja.md) | [English](skills/plainstorm/references/discovery-routes.md) |
+| 状態の記録・試作・再開 | [日本語](skills/plainstorm/references/state-and-reentry.ja.md) | [English](skills/plainstorm/references/state-and-reentry.md) |
+| スキル一式の説明 | [日本語](skills/plainstorm/README.ja.md) | [English](skills/plainstorm/README.md) |
+| 開発時の注意 | [日本語](AGENTS.ja.md) | [English](AGENTS.md) |
+| 出典・第三者の権利表記 | [日本語](THIRD_PARTY_NOTICES.ja.md) | [English](THIRD_PARTY_NOTICES.md) |
 
-Superpowers の MIT 通知と、概念上の参照元は [第三者通知](THIRD_PARTY_NOTICES.md) に記載しています。
+Codexが通常読み込む入口は英語原文の `SKILL.md` です。`.ja.md` は同じ内容を日本語で確認するための対訳です。ライセンス通知の原文は [LICENSE.superpowers](skills/plainstorm/LICENSE.superpowers) に保持しています。
+
+具体的な依頼例は [使い方ガイド](docs/usage.md) を参照してください。
+
+Superpowers の MIT 通知と、概念上の参照元は [出典・第三者の権利表記](THIRD_PARTY_NOTICES.ja.md) に記載しています。
