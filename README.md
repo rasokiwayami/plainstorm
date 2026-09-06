@@ -27,15 +27,18 @@ $skill-installer https://github.com/rasokiwayami/plainstorm/tree/main/skills/pla
 
 ### 手動コピー
 
-同じ名前のコピーを複数の場所へ置かず、利用するスキル領域を一つ選びます。公式のユーザー領域は `$HOME/.agents/skills`、リポジトリ単位の領域は対象リポジトリの `.agents/skills` です。この環境の既存インストーラーを使う場合は `$CODEX_HOME/skills`（未設定なら通常 `~/.codex/skills`）も選択肢になります。
+同じ名前のコピーを複数の場所へ置かず、利用するスキル領域を一つ選びます。公式のユーザー領域は `$HOME/.agents/skills`、リポジトリ単位の領域は対象リポジトリの `.agents/skills` です。`skill-installer` では `$CODEX_HOME/skills`（未設定なら通常 `~/.codex/skills`）も使用されます。
 
 既存ターゲットを保護するため、コピー前に存在を確認します。
 
 ```sh
+git clone https://github.com/rasokiwayami/plainstorm.git
+cd plainstorm
+
 SKILL_ROOT="$HOME/.agents/skills"
 TARGET="$SKILL_ROOT/plainstorm"
 
-if [ -e "$TARGET" ]; then
+if [ -e "$TARGET" ] || [ -L "$TARGET" ]; then
   printf '%s\n' "既存の $TARGET を保持します。新規コピーを中止しました。"
   exit 1
 fi
@@ -96,4 +99,4 @@ PlainStorm は、デバッグ、コードレビュー、すでに確定した仕
 - [使い方ガイド](docs/usage.md)
 - [GitHub リポジトリ](https://github.com/rasokiwayami/plainstorm)
 
-スキル本体と三つの参照資料は、受け入れ済みの PlainStorm ファイルを内容変更なしで収録しています。Superpowers の MIT 通知と、概念上の参照元は [第三者通知](THIRD_PARTY_NOTICES.md) に記載しています。
+Superpowers の MIT 通知と、概念上の参照元は [第三者通知](THIRD_PARTY_NOTICES.md) に記載しています。

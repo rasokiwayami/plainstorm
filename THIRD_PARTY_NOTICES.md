@@ -2,9 +2,8 @@
 
 ## Superpowers brainstorming derivative
 
-PlainStorm's following files are concise, clean-room derivatives of the listed
-Superpowers source. Their operational scope is the PlainStorm workflow; no
-source text is copied beyond the needed attribution.
+The skill entrypoint includes material adapted from the Superpowers
+brainstorming skill. The recorded source and MIT notice are listed below.
 
 The related upstream project is [obra/superpowers](https://github.com/obra/superpowers).
 The `openai-curated/superpowers/2f1a8948` value below is the retained curated
