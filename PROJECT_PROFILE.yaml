@@ -1,0 +1,12 @@
+schema_version: 6
+project:
+  repo: rasokiwayami/plainstorm
+  type: standalone_product
+  default_branch: main
+  authority:
+    allowed_actions:
+      - dev.local_inspect
+      - dev.local_edit
+      - dev.local_test
+      - dev.local_commit
+      - dev.github_push
